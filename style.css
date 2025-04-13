@@ -1,0 +1,152 @@
+/* Styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://images.pexels.com/photos/449751/pexels-photo-449751.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Styles pour le titre principal */
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styles pour le conteneur principal de l'application météo */
+.weather-app {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Fond plus opaque */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* Effet de zoom au survol du conteneur principal */
+.weather-app:hover {
+  transform: scale(1.02);
+}
+
+/* Styles pour le paragraphe d'instructions */
+p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Styles pour le conteneur de la barre de recherche */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Styles pour l'input de recherche */
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 180px;
+}
+
+/* Styles pour le bouton de recherche */
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet de changement de couleur au survol du bouton */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour le conteneur des résultats de la météo */
+#weather-result {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Styles pour les boîtes de résultats */
+.box {
+  border: 2px solid rgba(51, 51, 51, 0.5); /* Bordure semi-transparente */
+  border-radius: 15px; /* Coins arrondis */
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7); /* Fond semi-transparent */
+  backdrop-filter: blur(5px); /* Effet verre */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Ombre */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Texte plus foncé */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+  width: 100%; /* Largeur des cadres */
+  height: 100px; /* Hauteur des cadres */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px; /* Espacement entre les boîtes */
+}
+
+/* Effet de zoom au survol des boîtes */
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Styles pour les icônes dans les boîtes */
+.box i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Styles pour le conteneur de l'heure */
+#time-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Styles pour l'affichage de l'heure */
+#time {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
